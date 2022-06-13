@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import HomeScreen from './src/screens/homescreen';
+import ResturantDetails from './src/screens/resturantdetails/RDindex';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <ResturantDetails />
+      <StatusBar style='auto'/> 
     </View>
   );
 }
