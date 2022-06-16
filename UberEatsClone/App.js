@@ -6,27 +6,15 @@ import DishDetails from './src/screens/dishdetails/dishdetails';
 import Basket from './src/screens/basket/basketdeets';
 import OrderScreen from './src/screens/orderscreen/orders';
 import OrderDetails from './src/screens/orderDetails/orderdetails';
+import {NavigationContainer} from '@react-navigation/native';
+import RootNavigator from './src/navigation/navigation';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/*<HomeScreen /> */}
-      {/*<ResturantDetails /> */}
-      {/* <DishDetails /> */ }
-      {/* <Basket /> */ }
-      {/* <OrderScreen /> */ }
-
-      <OrderDetails />
-      <StatusBar style='auto'/> 
-    </View>
+    <NavigationContainer>
+        <RootNavigator />
+        <StatusBar style='auto'/> 
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
